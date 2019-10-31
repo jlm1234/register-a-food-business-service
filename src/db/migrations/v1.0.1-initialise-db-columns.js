@@ -30,7 +30,7 @@ module.exports = {
       queryInterface.addColumn("operators", "operator_type", Sequelize.STRING),
       queryInterface.addColumn(
         "operators",
-        "operator_company_house_number",
+        "operator_companies_house_number",
         Sequelize.STRING
       ),
       queryInterface.addColumn(
@@ -84,7 +84,10 @@ module.exports = {
       queryInterface.removeColumn("metadata", "declaration2"),
       queryInterface.removeColumn("metadata", "declaration3"),
       queryInterface.removeColumn("operators", "operator_type"),
-      queryInterface.removeColumn("operators", "operator_company_house_number"),
+      queryInterface.removeColumn(
+        "operators",
+        "operator_companies_house_number"
+      ),
       queryInterface.removeColumn("operators", "operator_charity_number"),
       queryInterface.removeColumn("premises", "establishment_first_line"),
       queryInterface.removeColumn("premises", "establishment_street"),
